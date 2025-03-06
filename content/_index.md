@@ -10,7 +10,7 @@ interests:
 projects:
     title: "Projects"
     items:
-        - name: "CleanWeView|Chrome插件"
+        - name: "CleanWeView"
           tags: ['JavaScript', 'HTML', 'Web Development', 'UI Enhancement']
           about: "A Chrome extension that beautifies WeChat public account (微信公众号) articles for better readability."
           url: https://github.com/ShaodongDev/CleanWeView
