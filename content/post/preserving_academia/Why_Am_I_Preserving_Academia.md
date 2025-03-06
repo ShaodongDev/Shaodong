@@ -25,7 +25,7 @@ In my view, the pursuit of truth operates on two levels: a basic level and an ad
 
 Many students who haven’t been rigorously trained in academia tend to fall into a common error: when writing a paper, they first form a conclusion in their mind and then search for evidence that supports it. This is hardly the attitude of serious academic research. True academic research demands that a hypothesis be proposed first, followed by a search for evidence to test it. **If the evidence supports the hypothesis, then a conclusion is drawn and the hypothesis is provisionally accepted as a theory; if not, the hypothesis must be rejected or revised and a new one developed** (as shown below as [The Scientific Method as an Ongoing Process](https://en.m.wikipedia.org/wiki/File:The_Scientific_Method_as_an_Ongoing_Process.svg)).
 
-<img src="./SM_ongoing_process.png" style="zoom:50%;" />
+<img src="./SM_ongoing_process.png" style="zoom:80%;" />
 
 [Hu Shih](https://en.wikipedia.org/wiki/Hu_Shih) once summarized a research approach using examples from Qing Dynasty scholars with the phrase “[boldly hypothesize, cautiously verify](https://zh.wikisource.org/wiki/清代学者的治学方法).” I agree with that sentiment—but his notion of “verification” stayed at the basic level, merely ensuring factual accuracy, without delving into the advanced one. **It is the advanced pursuit of truth that truly embodies the scientific method in academia.**
 
@@ -49,7 +49,7 @@ The pursuit of truth comes at a cost—one of which is patience. I remember that
 
 Meaningful truth-seeking is rarely achieved overnight. Discovering a “black box” that, say, contains three pieces of chocolate may also be a form of truth-seeking—but it hardly requires any patience and seems trivial or simplistic. In academic research, it’s even more so; excellent work is built on the shoulders of those who came before. Since one must stand on those shoulders, one first has to climb up—forget about leaping straight to the top. After all, the accumulated intellectual achievements of humanity over centuries have finally exploded in our generation (as shown in the chart below, which illustrates the annual increase in journal articles published from 1800 to 2023). From personal experience, the rapid pace of technological advancements and products updates in the last two decades further supports this notion. **In nearly every field, our predecessors have conducted deep and profound research, and only by first accumulating and studying can one create something meaningful and efficient—there is no other way.** The Chinese ancient saying, “[Observe broadly and select sparingly; accumulate extensively and release sparingly](https://zh.wikisource.org/zh-hans/稼說（送張琥）),” perfectly captures this idea.
 
-<img src="./growth_data.png" style="zoom:40%;" />
+<img src="./growth_data.png" style="zoom:80%;" />
 
 On a side note, this explosion of intellectual achievement has undeniably brought about earth-shattering changes in our lives. Anyone who has lived in China over the past thirty years can attest to these profound transformations. Personally, I find it hard to understand those who, while enjoying the tangible benefits of human intellectual progress, still lament the decay of society. In fact, when viewed over a long stretch of time, we are indeed living in “the best of times.”
 
@@ -96,7 +96,7 @@ graph LR
       D --> G["Driving Exploratory Motivation<br>(Intrinsic Fuel)"]
     end
 
-    E --> H[Academia as a Means for Growth]
+    E --> H[Academia as a Means for Self-development]
     F --> H
     G --> H
     H --> I[Cognitive Upgrade and Life Transformation]
