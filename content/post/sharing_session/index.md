@@ -45,7 +45,7 @@ disqus: true
 [^1]: 即我认为的那些值得应该拿出大部分甚至全部精力关照的课程。
 [^2]: Daniel Maliniak, Amy Oakes, Susan Peterson, Michael J. Tierney, International Relations in the US Academy, International Studies Quarterly, Volume 55, Issue 2, June 2011, Pages 437–464, https://doi.org/10.1111/j.1468-2478.2011.00653.x
 
-![Methodology in International Relations by Year](https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/isq/55/2/10.1111/j.1468-2478.2011.00653.x/2/m_ISQU_653_f7.jpeg?Expires=1703119159&Signature=43wPt-o78LqlnWp-NHtjpjTxdUXOJjRsAWQx7ZRAUZpLZkKp0qlnqV1KfeXfH7JGavfMkpfbMbYox3cpogM-U74VpAJiJkjL4IA~cr92dmwNkvEvvUjbkErpswfNOPq7qi6qIpDMZirxaei93CTgB90rZZ5GMi-0N~9R0XD6d-jGMv5uzklrhn-xFISR4swjUlr~tLW0cqVozJQIvj5BNLj59E36NmeyxeBpKpLsjqh~RrBjjTdC7c3JhK4wcSCqnyqP~SIQvOoeC0XLU2MCiuVda-G5pojo-5BClFPaYRXuiHXEXeysoGJB2H5dlO3a14jhxCPZ4d8OIl6DvB3DMg__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA)
+
 
 
 >其次，数据分析算是一门硬核技能，有助于提升我们的核心竞争力,这对于将来找工作来说是很大的加分项[^3]。综上，数据分析类课程当仁不让的成为最重要的课程。
@@ -88,9 +88,7 @@ disqus: true
 ## "笨鸟"先申
 
 -   完成既定计划的时间总比想象的要多
-    - A校的学业压力临近毕业越来越大
-    
-    ![正负相关示意图](3.png)
+    - A校的学业压力临近毕业越来越大 
     
 -   UN申请是一场持久战
     -   海投、CV、CL的修改非常消耗时间和精力

@@ -19,7 +19,7 @@ I’m not an academic; I only went to graduate school and might best be called a
 
 I’ve often thought about what draws me to academia, and I believe there are three reasons: **the pursuit of truth, patience, and curiosity**. Let me explain each in turn.
 
-# The Pursuit of Truth
+## The Pursuit of Truth
 
 In my view, the pursuit of truth operates on two levels: a basic level and an advanced level. The basic level is simply about ensuring the accuracy of the facts or data one seeks, while the advanced level involves avoiding the temptation to use accurate facts selectively—only those that support a preconceived notion—to deceive oneself. Most people can achieve the basic level with a little effort, but the advanced level requires a far more rigorous mindset and methodological training. I had no idea about this advanced approach until graduate school. While preparing to publish papers, I watched many lectures on academic standards and was introduced to the [Scientific Method](https://en.wikipedia.org/wiki/Scientific_method). From that point on, I could no longer tolerate fake or pseudo-research—and, more importantly, I couldn’t deceive myself anymore.
 
@@ -43,7 +43,7 @@ Only by making such comparisons can we more accurately deduce the true impact of
 
 After all these experiences, the pursuit of truth has become immensely important to me. Moreover, once this way of thinking is established, it seems irreversible—much like how, once we’ve breathed fresh air, we can no longer tolerate smog.
 
-# Patience
+## Patience
 
 The pursuit of truth comes at a cost—one of which is patience. I remember that before I entered graduate school, a doctoral candidate told me, “In academia, you must be prepared to sit on a cold bench[^1].”
 
@@ -59,7 +59,7 @@ In addition, I recently took up running—the kind where you just start without 
 
 In short, my academic experiences have greatly enhanced my patience toward both people and situations. I am deeply grateful to my past self for persevering, because I have gained something far more valuable than merely a degree or published papers.
 
-# Curiosity
+## Curiosity
 
 In the process of doing academic work, under the dual influence of the pursuit of truth and patience, curiosity is naturally triggered in a cycle, which in turn feeds back into and strengthens the former two qualities. I believe this is why so many outstanding scholars dedicate their lives to researching specific fields: they are simply too curious. 
 
@@ -73,7 +73,7 @@ After graduation, as I came into contact with more people, I noticed that many s
 
 With that in mind, how can we afford to neglect our curiosity? After all, curiosity is the foundation of proactive learning, and learning new knowledge can profoundly transform one’s life. Yet, those who lack curiosity rarely seek to learn, and those who don’t learn can never experience the benefits of learning. As a result, they continue not to learn, continue not experiencing the benefits of learning, and their curiosity continues to wither… and so the cycle continues.
 
-# Conclusion
+## Conclusion
 
 Based on these three pillars, I have chosen to preserve academia within my heart. Actually, this doesn't need to be limited solely to academic pursuits—academia has played an important role in my life and has enriched me, so it occupies a special place in my heart. In fact, any worthy pursuit that can evoke these three qualities deserves its own dedicated space within us.
 

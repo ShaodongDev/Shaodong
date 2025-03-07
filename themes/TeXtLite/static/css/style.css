@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+
 :root {
   --skin: #ffffff;
   --landing-section-skin: #f7f7f7;
@@ -106,7 +108,7 @@ li code {
 .article_content,
 .tippy-box {
   font-size: 18px;
-  font-family: "Helvetica", "Arial", "Segoe UI", "EngCustom", Optima,
+  font-family: "Open Sans", "Arial", "Segoe UI", "EngCustom", Optima,
     "Lucida Sans", Calibri, Candara, "Chinese-Custom", sans-serif;
 }
 .article_content p {
