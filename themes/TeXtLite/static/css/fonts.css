@@ -402,11 +402,11 @@
 /* Italic */
 @font-face {
   font-family: "Chinese-Custom";
-  src: local("NotoSerifCJK-Regular"), local("Noto Serif CJK SC Regular"),
+  src: local("Kaiti SC"), local("楷体-简"), local("KaiTi"), local("楷体"),
+    local("NotoSerifCJK-Regular"), local("Noto Serif CJK SC Regular"),
     local("Noto Serif CJK SC"), local("Source Han Serif CN Regular"),
     local("思源宋体 CN Regular"), local("Songti SC"), local("宋体-简"),
-    local("SimSun"), local("NSimSun"), local("STSong"), local("华文宋体"),
-    local("KaiTi"), local("楷体"), local("Kaiti SC"), local("楷体-简");
+    local("SimSun"), local("NSimSun"), local("STSong"), local("华文宋体");
   font-style: italic;
 }
 
