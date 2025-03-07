@@ -15,7 +15,7 @@ disqus: true
 
 ---
 
-I’m not an academic; I only went to graduate school and might best be called a researcher. After graduation, my work has nothing to do with academic research. Yet thanks to the academic training I received as a student, the methods and ways of thinking I learned have continued to positively influence my life. I’ve therefore maintained an interest in academia, often reading scholarly works. However, I’m not writing this article to discuss academic research in any particular discipline. Instead, I want to explain why I choose to preserve academia in my heart, **as I see it as a means rather than an end.**
+I’m not a scholar; I only went to graduate school and might best be called a researcher. After graduation, my work has nothing to do with academic research. Yet thanks to the academic training I received as a student, the methods and ways of thinking I learned have continued to positively influence my life. I’ve therefore maintained an interest in academia, often reading scholarly works. However, I’m not writing this article to discuss academic research in any particular discipline. Instead, I want to explain why I choose to preserve academia in my heart, **as I see it as a means rather than an end.**
 
 I’ve often thought about what draws me to academia, and I believe there are three reasons: **the pursuit of truth, patience, and curiosity**. Let me explain each in turn.
 
