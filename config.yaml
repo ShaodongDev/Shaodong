@@ -26,8 +26,6 @@ menu:
     - name: "About"
       url: "/about/"
       weight: 4
-    - name: "Subscribe"
-      url: "/feed.xml"
 
 params:
   description: "About Learning"
