@@ -109,8 +109,16 @@ li code {
 .tippy-box {
   font-size: 18px;
   font-family: "Open Sans", "Arial", "Segoe UI", "EngCustom", Optima,
-    "Lucida Sans", Calibri, Candara, "Chinese-Custom", sans-serif;
+    "Lucida Sans", Calibri, Candara, sans-serif;
 }
+
+/* fallback for Zh */
+.article_content:lang(zh),
+.tippy-box:lang(zh) {
+  font-family: "Chinese-Custom", "PingFang SC", "Microsoft YaHei",
+    "Noto Sans CJK SC", sans-serif;
+}
+
 .article_content p {
   line-height: 1.7;
   margin-bottom: 1.35em;
