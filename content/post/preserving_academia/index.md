@@ -7,9 +7,9 @@ categories: []
 tags:
   - English
   - Academia
+  - 成长
+  - 科学
   - Learning
-  - Scientific Method
-  - Self-Improvement
 draft: no
 disqus: true
 
