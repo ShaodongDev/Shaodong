@@ -174,14 +174,8 @@ blockquote {
   border-left: 2px solid rgb(175, 175, 175);
   padding: 0 0.5em;
   margin: 0.3em 0 0.3em 2em;
-}
-
-/* blockquote for Zh*/
-blockquote:has(:lang(zh)),
-blockquote:has(chinese-characters) {
   font-family: "Kaiti SC", "楷体-简", "KaiTi", "楷体", "STKaiti", "华文楷体",
-    serif !important;
-  font-style: normal;
+    serif;
 }
 
 blockquote p {
