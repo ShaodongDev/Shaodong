@@ -177,9 +177,13 @@ blockquote {
 }
 
 /* blockquote for Zh*/
-blockquote:lang(zh) {
+html:lang(zh) blockquote,
+blockquote:lang(zh),
+blockquote[lang="zh"],
+blockquote[lang="zh-CN"] {
   font-family: "Kaiti SC", "楷体-简", "KaiTi", "楷体", "STKaiti", "华文楷体",
-    serif;
+    serif !important;
+  font-style: normal;
 }
 
 blockquote p {
