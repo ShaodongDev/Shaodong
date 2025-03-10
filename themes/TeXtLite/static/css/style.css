@@ -176,6 +176,11 @@ blockquote {
   margin: 0.3em 0 0.3em 2em;
 }
 
+/* blockquote for Zh*/
+blockquote:lang(zh) {
+  font-family: "楷体", "KaiTi", "SimKai", sans-serif;
+}
+
 blockquote p {
   margin: 0;
   padding: 0;
