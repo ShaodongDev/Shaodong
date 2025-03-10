@@ -178,7 +178,8 @@ blockquote {
 
 /* blockquote for Zh*/
 blockquote:lang(zh) {
-  font-family: "KaiTi SC", "楷体-简", "SimKai", sans-serif;
+  font-family: "Kaiti SC", "楷体-简", "KaiTi", "楷体", "STKaiti", "华文楷体",
+    serif;
 }
 
 blockquote p {
