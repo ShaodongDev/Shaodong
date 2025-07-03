@@ -23,8 +23,9 @@ disqus: true
     src="Venn1.png">
     <br>
     <div style="color:orange; border-bottom: 1px solid #d9d9d9;
-         display: inline-block; color: #999; padding: 2px;">TEST for FIGURE</div>
+         display: inline-block; color: #999; padding: 0px;">TEST for FIGURE</div>
 </center>
+
 
 首先要明确的是，科学无论在哪个国家都是小众的、难以普及的，因为知识传播的阻力是巨大的，光谱的另一极则是我们熟悉的谣言；其次，对于中国人来说，科学这个词可谓是"魂牵梦绕"，距离陈独秀1919年在《新青年》上首次提及"赛先生"已经过去了100多年，然终不能解，这多少让人觉得有些无奈。
 
