@@ -17,16 +17,6 @@ disqus: true
 
 <img src="Venn1.png" style="zoom:100%;" />
 
-<center>
-    <img style="width: 30%; border-radius: 0.3125em;
-    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
-    src="Venn1.png">
-    <br>
-    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
-         display: inline-block; color: #999; padding: 0px;">TEST for FIGURE</div>
-</center>
-
-
 首先要明确的是，科学无论在哪个国家都是小众的、难以普及的，因为知识传播的阻力是巨大的，光谱的另一极则是我们熟悉的谣言；其次，对于中国人来说，科学这个词可谓是"魂牵梦绕"，距离陈独秀1919年在《新青年》上首次提及"赛先生"已经过去了100多年，然终不能解，这多少让人觉得有些无奈。
 
 > 但是追本溯源，本誌同人本來無罪，只因為擁護那德莫克拉西（Democracy）和**賽因斯 (Science)** 兩位先生，才犯了這幾條滔天的大罪。·······要擁護那賽先生，便不得不反對舊藝術、舊宗教。
