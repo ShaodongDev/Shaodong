@@ -18,7 +18,7 @@ disqus: true
 <img src="Venn1.png" style="zoom:100%;" />
 
 <center>
-    <img style="width: 缩放比例; border-radius: 0.3125em;
+    <img style="width: 30%; border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
     src="Venn1.png">
     <br>
