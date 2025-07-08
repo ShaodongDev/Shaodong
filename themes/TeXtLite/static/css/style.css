@@ -171,7 +171,7 @@ div.footnotes::before {
 }
 
 blockquote {
-  border-left: 3.5px solid rgb(#407dd9);
+  border-left: 3.5px solid rgb(75, 127, 217);
   padding: 0 0.5em;
   margin: 0.3em 0 0.3em 2em;
   font-family: "Noto Sans SC", "Segoe UI", "Arial", "Kaiti SC", "楷体-简",
