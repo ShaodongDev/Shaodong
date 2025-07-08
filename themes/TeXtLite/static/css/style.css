@@ -178,7 +178,9 @@ blockquote {
     "KaiTi", "楷体", "STKaiti", "华文楷体", serif;
 }
 
-blockquote p {
+blockquote p,
+blockquote ul li,
+blockquote ol li {
   color: rgb(89, 99, 110);
   margin: 0;
   padding: 0;
