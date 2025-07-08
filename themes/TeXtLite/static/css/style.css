@@ -136,7 +136,7 @@ li code {
   width: 100%;
   display: block;
   padding: 0 auto;
-  margin: 1.35em auto;
+  margin: 1.34em auto 0.7em;
 }
 div.two-column {
   display: flex;
@@ -171,7 +171,7 @@ div.footnotes::before {
 }
 
 blockquote {
-  border-left: 2px solid rgb(209, 217, 224);
+  border-left: 3.5px solid rgb(67, 80, 175);
   padding: 0 0.5em;
   margin: 0.3em 0 0.3em 2em;
   font-family: "Noto Sans SC", "Segoe UI", "Arial", "Kaiti SC", "楷体-简",
@@ -192,6 +192,7 @@ blockquote ol li {
   color: var(--link);
   font-weight: 600;
   text-decoration: none;
+  text-decoration: underline;
 }
 
 .container a:hover,
