@@ -2,7 +2,7 @@
 title: '到底什么是 p-value?'
 author: Shaodong ZHANG
 date: '2025-05-19'
-slug: ''
+slug: 'p-value'
 categories: []
 tags:
   - 系统
@@ -11,6 +11,7 @@ tags:
   - 中文
   - 概念
   - learning
+description: '本文以通俗易懂的方式，深入浅出地解释了p-value的含义、统计推断的逻辑以及系统性学习的方法，帮助读者构建完整的统计学知识网络。'
 draft: no
 disqus: true
 ---
