@@ -171,11 +171,11 @@ div.footnotes::before {
 }
 
 blockquote {
-  border-left: 2px solid rgb(175, 175, 175);
+  border-left: 2px solid rgb(89, 99, 110);
   padding: 0 0.5em;
   margin: 0.3em 0 0.3em 2em;
-  font-family: "Arial", "Kaiti SC", "楷体-简", "KaiTi", "楷体", "STKaiti",
-    "华文楷体", serif;
+  font-family: "Noto Sans SC", "Segoe UI", "Arial", "Kaiti SC", "楷体-简",
+    "KaiTi", "楷体", "STKaiti", "华文楷体", serif;
 }
 
 blockquote p {
