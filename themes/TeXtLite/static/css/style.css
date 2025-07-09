@@ -116,8 +116,8 @@ li code {
 /* fallback for Zh */
 .article_content:lang(zh),
 .tippy-box:lang(zh) {
-  font-family: "Chinese-Custom", "PingFang SC", "Microsoft YaHei",
-    "Noto Sans CJK SC", sans-serif;
+  font-family: "Noto Sans SC", "Chinese-Custom", "PingFang SC",
+    "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
 }
 
 .article_content p {
