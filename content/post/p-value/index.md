@@ -1,5 +1,5 @@
 ---
-title: '到底什么是 p-value?'
+title: '到底什么是 p-value？'
 author: Shaodong ZHANG
 date: '2025-05-19'
 slug: 'p-value'
