@@ -1,5 +1,5 @@
 ---
-title: 'Why Am I Preserving Academia?'
+title: 'Why I Keep Academia Within Me'
 author: Shaodong ZHANG
 date: '2025-03-06'
 slug: ''
@@ -15,9 +15,8 @@ disqus: true
 
 ---
 
-I’m not a scholar; I only went to graduate school and might best be called a researcher. After graduation, my work has nothing to do with academic research. Yet thanks to the academic training I received as a student, the methods and ways of thinking I learned have continued to positively influence my life. I’ve therefore maintained an interest in academia, often reading scholarly works. However, I’m not writing this article to discuss academic research in any particular discipline. Instead, I want to explain why I choose to preserve academia in my heart, **as I see it as a means rather than an end.**
+I’m not a scholar; I only went to graduate school. After graduation, my career moved far away from academic research. Yet I have kept academia within me. The training I received as a student—the methods and the ways of thinking—still shapes how I see the world and how I make decisions. That is why I continue to read scholarly works and reflect on academic values. However, I’m not writing this article to discuss academic research in any particular discipline. Instead, I want to share why I choose to keep academia within me, **since I see it not as an end in itself, but as a means to live more truthfully, patiently, and curiously.**
 
-I’ve often thought about what draws me to academia, and I believe there are three reasons: **the pursuit of truth, patience, and curiosity**. Let me explain each in turn.
 
 ## The Pursuit of Truth
 
