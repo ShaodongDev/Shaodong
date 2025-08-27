@@ -44,19 +44,19 @@ Reflecting on my own experience, during my thesis, I was in no position to risk 
 
 This mindset has shaped the way I look at the world. For example, think about the “information cocoon” created by online platforms such as Google, TikTok, and Weibo. Algorithms feed us what we like, so we see more of the same. That’s troubling enough. But even worse is when people build their own cocoons.
 
-Take a recent example: under the long influence of certain information environments, some people gradually come to believe that Japan’s discharge of radioactive water of the Fukushima Daiichi Nuclear Power Plant must be harmful. Once they lock onto that belief, they don’t search “Is the release harmful?” Instead, they type in “How harmful is it?”—hunting only for evidence that confirms what they already think. That’s not truth-seeking; that’s self-deception: the conclusion comes first, the evidence second.
+Take a recent example: under the long influence of certain information environments, some people gradually come to believe that [Japan’s discharge of radioactive water of the Fukushima Daiichi Nuclear Power Plant](https://en.wikipedia.org/wiki/Discharge_of_radioactive_water_of_the_Fukushima_Daiichi_Nuclear_Power_Plant#:~:text=Radioactive%20water%20from%20the%20Fukushima,the%20Tōhoku%20earthquake%20and%20tsunami.) must be harmful. Once they lock onto that belief, they don’t search “Is the discharge harmful?” Instead, they type in “How harmful is it?”—hunting only for evidence that confirms what they already think. That’s not truth-seeking; that’s self-deception: the conclusion comes first, the evidence second.
 
-Fortunately, with a truth-seeking mindset shaped by my academic training, I approached it differently. I first asked, “Is it harmful at all?” Only if the answer was yes would I then ask, “How harmful?” At first glance, it’s just one extra step. In reality, it changes everything.
+Fortunately, with a truth-seeking mindset shaped by my academic training, I would ask first: is it really harmful? If yes, then I would ask, how harmful?  That one extra step makes all the difference.
 
-Furthermore, the [Counterfactual reasoning](https://www.sciencedirect.com/topics/computer-science/counterfactual-reasoning#:~:text=Counterfactual%20reasoning%20refers%20to%20the,decision%20theory%20and%20game%20theory.)—a tool commonly used in research—is also a powerful asset in advanced truth-seeking. In short, scholars make causal inferences by comparing scenarios with and without a particular variable. For example:
+Another powerful tool in advanced truth-seeking is [Counterfactual reasoning](https://www.sciencedirect.com/topics/computer-science/counterfactual-reasoning#:~:text=Counterfactual%20reasoning%20refers%20to%20the,decision%20theory%20and%20game%20theory.), widely used in social science research. In plain terms, it means drawing causal inferences by comparing what actually happened with what might have happened if a certain factor had been absent. For example:
 
-> Fact: After a certain policy was implemented, wages increased.
+> Fact: After a certain policy was introduced, wages increased.
 >
-> **Counterfactual reasoning:** If the policy had not been implemented, would wages still have increased?
+> **Counterfactual:** If the policy had not been introduced, would wages still have increased?
 
-Only by making such comparisons can we more accurately deduce the true impact of a policy. Reflect on this: if we don’t adopt this truth-seeking approach in our everyday decisions, we might overestimate the importance of certain factors while overlooking genuine causal relationships. It could even be said that without this kind of thinking, it is impossible to fully understand the world.
+Only by making comparisons like this can we get closer to the true impact of a policy. Think about it: if we don’t apply this kind of reasoning in our daily choices, we risk exaggerating the role of some factors while missing the real causes. In a sense, without this habit of thought, it’s impossible to fully understand the world.
 
-After all these experiences, the pursuit of truth has become immensely important to me. Moreover, once this way of thinking is established, it seems irreversible—much like how, once we’ve breathed fresh air, we can no longer tolerate smog.
+After these experiences, truth-seeking has become central to me. And once this mindset takes root, it feels irreversible. It’s like putting on glasses—once you see clearly, you can’t pretend to be satisfied with the blur.
 
 ## Patience
 
@@ -65,11 +65,12 @@ The pursuit of truth comes at a cost—one of which is patience. I remember that
 Meaningful truth-seeking is rarely achieved overnight. Discovering a “black box” that, say, contains three pieces of chocolate may also be a form of truth-seeking—but it hardly requires any patience and seems trivial or simplistic. In academic research, it’s even more so; excellent work is built on the shoulders of those who came before. Since one must stand on those shoulders, one first has to climb up—forget about leaping straight to the top. After all, the accumulated intellectual achievements of humanity over centuries have finally exploded in our generation (as shown in the chart below, which illustrates the annual increase in journal articles published from 1800 to 2023). From personal experience, the rapid pace of technological advancements and products updates in the last two decades further supports this notion. **In nearly every field, our predecessors have conducted deep and profound research, and only by first accumulating and studying can one create something meaningful and efficient—there is no other way.** The Chinese ancient saying, “[Observe broadly and select sparingly; accumulate extensively and release sparingly](https://zh.wikisource.org/zh-hans/稼說（送張琥）),” perfectly captures this idea.
 
 <center>
-    <img style="width: 80%; border-radius: 0.3125em;
+    <img style="width: 70%; border-radius: 0.3125em;
     box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
     src="./growth_data.png">
     <div style="color:orange;color: #999; padding: 0px;"></div>
 </center>
+
 
 On a side note, this explosion of intellectual achievement has undeniably brought about earth-shattering changes in our lives. Anyone who has lived in China over the past thirty years can attest to these profound transformations. Personally, I find it hard to understand those who, while enjoying the tangible benefits of human intellectual progress, still lament the decay of society. In fact, when viewed over a long stretch of time, we are indeed living in “the best of times.”
 
