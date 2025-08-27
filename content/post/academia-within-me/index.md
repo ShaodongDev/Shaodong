@@ -37,7 +37,7 @@ Take student research as an example. Many students, without proper training, mak
     src="./SM_ongoing_process.png">
     <div style="color:orange;color: #999; padding: 0px;">The Scientific Method as an Ongoing Process</div>
 </center>
-[Hu Shih](https://en.wikipedia.org/wiki/Hu_Shih) once summed up a research approach with the phrase: "*Make bold hypotheses, and verify them carefully*."[^1] I agree with his point, but I also see its limits. His idea of “verification” stops at the basic level of truth-seeking—making sure facts and data are accurate. What it doesn’t fully capture is the advanced level of truth-seeking, which is at the very core of the scientific method in serious scholarship.
+[Hu Shih](https://en.wikipedia.org/wiki/Hu_Shih) once summed up a research approach with the phrase: *"Make bold hypotheses, and verify them carefully."*[^1] I agree with his point, but I also see its limits. His idea of “verification” stops at the basic level of truth-seeking—making sure facts and data are accurate. What it doesn’t fully capture is the advanced level of truth-seeking, which is at the very core of the scientific method in serious scholarship.
 
 Reflecting on my own experience, during my thesis, I was in no position to risk academic misconduct such as data fabrication (thus meeting the basic truth-seeking). I rewrote my hypothesis three times over six months. Each time, the evidence proved my old idea wrong, I had to accept the reality, drop it, and start over. Although this process was time-consuming and arduous, it gave me a solid foundation in the value of truth-seeking. Later, when I read Ray Dalio’s principle “[Embrace Reality and Deal with It](https://www.principles.com/principles/8b086563-5bb4-4741-8713-c62bd1a0d749/),” I realized I had already learned that lesson in grad school.
 
@@ -110,7 +110,7 @@ For these three reasons, truth-seeking, patience, and curiosity, I’ve chosen t
 
 [^1]: Hu Shih. *The Methodology of Qing Dynasty Scholars* (清代学者的治学方法). 1912. Available at [Wikisource](https://zh.wikisource.org/wiki/清代学者的治学方法). 
 [^2]: "坐冷板凳" (literally ”sitting on a cold bench“) is a Chinese idiom that refers to enduring long periods of hard work or waiting without immediate recognition or reward.
-[^3]: Su Shi. 稼说 (送张琥). Available at [Wikisource](https://zh.wikisource.org/zh-hans/稼說（送張琥）)
+[^3]: Su Shi. 稼说 (送张琥). Available at [Wikisource](https://zh.wikisource.org/zh-hans/稼說（送張琥）).
 
 
 ```mermaid
