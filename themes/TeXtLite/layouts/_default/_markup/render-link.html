@@ -1,0 +1,2 @@
+{{- $url := .Destination | safeURL -}}
+<a href="{{ $url }}"{{ with .Title}} title="{{ . }}"{{ end }} target="_blank" rel="noopener">{{ .Text | safeHTML }}</a>
