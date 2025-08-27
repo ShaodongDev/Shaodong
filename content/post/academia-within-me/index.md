@@ -1,5 +1,5 @@
 ---
-title: 'Why I Keep Academia Within Me'
+title: 'Why I Keep a Space for Scholarship'
 author: Shaodong ZHANG
 date: '2025-03-06'
 slug: ''
@@ -15,22 +15,38 @@ disqus: true
 
 ---
 
-I’m not a scholar; I only went to graduate school. After graduation, my career moved far away from academic research. Yet I have kept academia within me. The training I received as a student—the methods and the ways of thinking—still shapes how I see the world and how I make decisions. That is why I continue to read scholarly works and reflect on academic values. However, I’m not writing this article to discuss academic research in any particular discipline. Instead, I want to share why I choose to keep academia within me, **since I see it not as an end in itself, but as a means to live more truthfully, patiently, and curiously.**
+I’m not a scholar. I’ve been to grad school, so at most I can call myself a researcher. After graduation, my work had nothing to do with academic research. But the training I went through as a student—the methods, the way of thinking—has shaped me ever since. Because of that, I’ve kept my interest in scholarship alive. I still read academic work from time to time.
 
+I’m not writing this piece to dive into one subject or to analyze a specific field. Instead, I want to explain why I’ve chosen to keep a space for scholarship in my life, **seeing it as a means rather than an end in itself**.
 
-## The Pursuit of Truth
+Looking back, I’ve realized there are three reasons I enjoy it so much: **truth-seeking, patience, and curiosity**. Let me go through them one by one.
 
-In my view, the pursuit of truth operates on two levels: a basic level and an advanced level. The basic level is simply about ensuring the accuracy of the facts or data one seeks, while the advanced level involves avoiding the temptation to use accurate facts selectively—only those that support a preconceived notion—to deceive oneself. Most people can achieve the basic level with a little effort, but the advanced level requires a far more rigorous mindset and methodological training. I had no idea about this advanced approach until graduate school. While preparing to publish papers, I watched many lectures on academic standards and was introduced to the [Scientific Method](https://en.wikipedia.org/wiki/Scientific_method). From that point on, I could no longer tolerate fake or pseudo-research—and, more importantly, I couldn’t deceive myself anymore.
+## Truth-Seeking
 
-Many students who haven’t been rigorously trained in academia tend to fall into a common error: when writing a paper, they first form a conclusion in their mind and then search for evidence that supports it. This is hardly the attitude of serious academic research. True academic research demands that a hypothesis be proposed first, followed by a search for evidence to test it. **If the evidence supports the hypothesis, then a conclusion is drawn and the hypothesis is provisionally accepted as a theory; if not, the hypothesis must be rejected or revised and a new one developed** (as shown below as [The Scientific Method as an Ongoing Process](https://en.m.wikipedia.org/wiki/File:The_Scientific_Method_as_an_Ongoing_Process.svg)).
+For me, truth-seeking happens on two levels: basic and advanced.
 
-<img src="./SM_ongoing_process.png" style="zoom:80%;" />
+The basic level is simply about making sure facts and data are accurate. The advanced level is harder—it’s about resisting the urge to fool yourself by picking only the facts that favor your side. Most people can manage the first if they try. But the second takes real discipline and training.
 
-[Hu Shih](https://en.wikipedia.org/wiki/Hu_Shih) once summarized a research approach using examples from Qing Dynasty scholars with the phrase “[boldly hypothesize, cautiously verify](https://zh.wikisource.org/wiki/清代学者的治学方法).” I agree with that sentiment—but his notion of “verification” stayed at the basic level, merely ensuring factual accuracy, without delving into the advanced one. **It is the advanced pursuit of truth that truly embodies the scientific method in academia.**
+I didn’t even know about that advanced level until grad school. While preparing to publish my thesis, I watched lectures on research ethics and dug into the [scientific method](https://en.wikipedia.org/wiki/Scientific_method). From then on, I could no longer stomach fake or sloppy research—and more importantly, I could no longer lie to myself.
 
-Reflecting on my own experience, during graduate school I was in no position to risk academic misconduct such as data fabrication (thus meeting the basic pursuit of truth). I ended up revising my hypothesis three times over a period of more than six months because, midway through my research, I discovered that the evidence contradicted my initial hypothesis. I had to accept reality, discard my original hypothesis, and start over. Although this process was time-consuming and arduous, it firmly instilled in me a deep commitment to the pursuit of truth. After graduation, when I encountered Ray Dalio’s principle, “[Embrace the Reality and Deal With It](https://www.principles.com/principles/8b086563-5bb4-4741-8713-c62bd1a0d749/),” I couldn’t help but feel grateful that I had internalized this value during my student days.
+Take student research as an example. Many students, without proper training, make a common mistake: they start with a conclusion in mind, then gather evidence to back it up. That’s not how serious scholarship works. **Real research begins with a hypothesis, then hunts for evidence. If the evidence supports it, you accept it—at least for now. If not, you drop it or reshape it and build a new one** (as shown below as [The Scientific Method as an Ongoing Process](https://en.m.wikipedia.org/wiki/File:The_Scientific_Method_as_an_Ongoing_Process.svg)).
 
-I mention this because, before stepping into the workforce, I had begun to examine my surroundings with a truth-seeking lens—and that helped me avoid many detours. For example, consider the common phenomenon of the “information cocoon.” We now live in a world dominated by algorithm-driven recommendations. Platforms such as Google, TikTok, and Weibo suggest similar content based on our interests, causing us to see only what we already like. Yet that is only the tip of the iceberg. Even more worrisome is when people deliberately construct their own information cocoon. Under the prolonged influence of a particular information environment, some individuals gradually form a fixed belief—for instance, that Japan’s discharge of nuclear wastewater will cause severe harm. Consequently, they actively search online for “how harmful is nuclear wastewater discharge?” rather than investigating whether “nuclear wastewater discharge is harmful.” This is precisely the self-deception I mentioned earlier: arriving at a conclusion first (that nuclear wastewater discharge is harmful) and then looking for evidence regarding the extent of the harm. Fortunately, armed with an academic mindset and a commitment to the pursuit of truth, I would first verify whether nuclear wastewater discharge is harmful (instead of presupposing it is) and only then examine the magnitude of its impact. What might seem like an extra step is, in reality, a world of difference.
+<center>
+    <img style="width: 60%; border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
+    src="./SM_ongoing_process.png">
+    <div style="color:orange;color: #999; padding: 0px;">The Scientific Method as an Ongoing Process</div>
+</center>
+
+[Hu Shih](https://en.wikipedia.org/wiki/Hu_Shih) once summed up a research approach with the phrase: *“Make bold hypotheses, and verify them carefully.”*[^2] I agree with his point, but I also see its limits. His idea of “verification” stops at the basic level of truth-seeking—making sure facts and data are accurate. What it doesn’t fully capture is the advanced level of truth-seeking, which is at the very core of the scientific method in serious scholarship.
+
+Reflecting on my own experience, during my thesis, I was in no position to risk academic misconduct such as data fabrication (thus meeting the basic truth-seeking). I rewrote my hypothesis three times over six months. Each time, the evidence proved my old idea wrong, I had to accept the reality, drop it, and start over. Although this process was time-consuming and arduous, it gave me a solid foundation in the value of truth-seeking. Later, when I read Ray Dalio’s principle “[Embrace Reality and Deal with It](https://www.principles.com/principles/8b086563-5bb4-4741-8713-c62bd1a0d749/),” I realized I had already learned that lesson in grad school.
+
+This mindset has shaped the way I look at the world. For example, think about the “information cocoon” created by online platforms such as Google, TikTok, and Weibo. Algorithms feed us what we like, so we see more of the same. That’s troubling enough. But even worse is when people build their own cocoons.
+
+Take a recent example: under the long influence of certain information environments, some people gradually come to believe that Japan’s discharge of radioactive water of the Fukushima Daiichi Nuclear Power Plant must be harmful. Once they lock onto that belief, they don’t search “Is the release harmful?” Instead, they type in “How harmful is it?”—hunting only for evidence that confirms what they already think. That’s not truth-seeking; that’s self-deception: the conclusion comes first, the evidence second.
+
+Fortunately, with a truth-seeking mindset shaped by my academic training, I approached it differently. I first asked, “Is it harmful at all?” Only if the answer was yes would I then ask, “How harmful?” At first glance, it’s just one extra step. In reality, it changes everything.
 
 Furthermore, the [Counterfactual reasoning](https://www.sciencedirect.com/topics/computer-science/counterfactual-reasoning#:~:text=Counterfactual%20reasoning%20refers%20to%20the,decision%20theory%20and%20game%20theory.)—a tool commonly used in research—is also a powerful asset in advanced truth-seeking. In short, scholars make causal inferences by comparing scenarios with and without a particular variable. For example:
 
@@ -48,7 +64,12 @@ The pursuit of truth comes at a cost—one of which is patience. I remember that
 
 Meaningful truth-seeking is rarely achieved overnight. Discovering a “black box” that, say, contains three pieces of chocolate may also be a form of truth-seeking—but it hardly requires any patience and seems trivial or simplistic. In academic research, it’s even more so; excellent work is built on the shoulders of those who came before. Since one must stand on those shoulders, one first has to climb up—forget about leaping straight to the top. After all, the accumulated intellectual achievements of humanity over centuries have finally exploded in our generation (as shown in the chart below, which illustrates the annual increase in journal articles published from 1800 to 2023). From personal experience, the rapid pace of technological advancements and products updates in the last two decades further supports this notion. **In nearly every field, our predecessors have conducted deep and profound research, and only by first accumulating and studying can one create something meaningful and efficient—there is no other way.** The Chinese ancient saying, “[Observe broadly and select sparingly; accumulate extensively and release sparingly](https://zh.wikisource.org/zh-hans/稼說（送張琥）),” perfectly captures this idea.
 
-<img src="./growth_data.png" style="zoom:80%;" />
+<center>
+    <img style="width: 80%; border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
+    src="./growth_data.png">
+    <div style="color:orange;color: #999; padding: 0px;"></div>
+</center>
 
 On a side note, this explosion of intellectual achievement has undeniably brought about earth-shattering changes in our lives. Anyone who has lived in China over the past thirty years can attest to these profound transformations. Personally, I find it hard to understand those who, while enjoying the tangible benefits of human intellectual progress, still lament the decay of society. In fact, when viewed over a long stretch of time, we are indeed living in “the best of times.”
 
@@ -81,6 +102,7 @@ Based on these three pillars, I have chosen to preserve academia within my heart
 **This article was written with the support of AI.*
 
 [^1]: "坐冷板凳" (literally ”sitting on a cold bench“) is a Chinese idiom that refers to enduring long periods of hard work or waiting without immediate recognition or reward.
+[^2]: Hu Shih, *The Methodology of Qing Dynasty Scholars [清代学者的治学方法]* (1912). Available at [Wikisource](https://zh.wikisource.org/wiki/清代学者的治学方法).
 
 
 ```mermaid
