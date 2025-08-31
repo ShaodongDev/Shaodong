@@ -2,14 +2,6 @@
 title: About
 ---
 
-
-## Posts & Language  <img src="" style="width:23%;float:right;"/>
-
-Aliqua tempor dolor aliquip aliqua fugiat aliqua do mollit mollit ipsum esse
-velit. Culpa mollit veniam ullamco magna reprehenderit ad reprehenderit velit
-deserunt aliquip non. Voluptate sunt veniam ex sunt Lorem incididunt Lorem ea
-duis incididunt.
-
 ## License
 
 All the posts on my blog are licensed under <a rel="license"

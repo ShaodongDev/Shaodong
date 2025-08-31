@@ -15,6 +15,12 @@ projects:
           about: "A Chrome extension that beautifies WeChat public account (微信公众号) articles for better readability."
           url: https://github.com/ShaodongDev/CleanWeView
           img: https://github.com/ShaodongDev/CleanWeView/blob/main/promo/BgDemo.png?raw=true
+
+        - name: "Email Classifier"
+          tags: ['Pytohn','Machine Learning','ETL Pipeline', 'Email Automation']
+          about: "A lightweight end-to-end ML pipeline for classifying email subjects with TF-IDF + Random Forest (semi-supervised loop included)."
+          url: https://github.com/ShaodongDev/email-classifier
+          img: https://github.com/ShaodongDev/email-classifier/blob/main/images/image.png?raw=true
         
 ---
 
