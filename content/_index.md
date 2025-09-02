@@ -18,7 +18,7 @@ projects:
 
         - name: "Email Classifier"
           tags: ['Python','Machine Learning','ETL Pipeline', 'Email Automation']
-          about: "A lightweight end-to-end ML pipeline for classifying email subjects with TF-IDF + Random Forest (semi-supervised loop included)."
+          about: "A lightweight end-to-end ML pipeline for classifying email subjects using TF-IDF with Random Forest or Logistic Regression, featuring a semi-supervised loop."
           url: https://github.com/ShaodongDev/email-classifier
           img: https://github.com/ShaodongDev/email-classifier/blob/main/images/image.png?raw=true
         
