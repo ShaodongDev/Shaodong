@@ -4,7 +4,18 @@
   <p class="site_info">
     <span class="copyright">© {{ .Site.Title }} 2021-{{ now.Format "2006" }}</span>
   </p>
-
+  
+{{ if .IsHome }}
+<script>
+  window.addEventListener('load', function () {
+    var s = document.createElement('script');
+    s.id = 'mapmyvisitors';
+    s.async = true;
+    s.src = 'https://mapmyvisitors.com/map.js?cl=ffffff&w=300&t=tt&d=lCul7YDvx7DOKqG0uhfwazpSf9SMfQf50x5wWdKAsiI&co=2d78ad&cmo=3acc3a&cmn=ff5353&ct=ffffff';
+    document.body.appendChild(s);
+  });
+</script>
+{{ end }}
 
   <p class="theme_info">Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> &amp; <a href="https://github.com/liao961120/TeXtLite" target="_blank">TeXtLite Theme</a>.</p>
 </footer>
