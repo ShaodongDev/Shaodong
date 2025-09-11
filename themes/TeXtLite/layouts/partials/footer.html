@@ -4,7 +4,10 @@
   <p class="site_info">
     <span class="copyright">© {{ .Site.Title }} 2021-{{ now.Format "2006" }}</span>
   </p>
-  <!-- Visitors map -->
+  
+  {{ if .IsHome }}
   <script type='text/javascript' id='mapmyvisitors' src='https://mapmyvisitors.com/map.js?cl=ffffff&w=300&t=tt&d=lCul7YDvx7DOKqG0uhfwazpSf9SMfQf50x5wWdKAsiI&co=2d78ad&cmo=3acc3a&cmn=ff5353&ct=ffffff'></script>
+  {{ end }}
+
   <p class="theme_info">Powered by <a href="https://gohugo.io" target="_blank">Hugo</a> &amp; <a href="https://github.com/liao961120/TeXtLite" target="_blank">TeXtLite Theme</a>.</p>
 </footer>
