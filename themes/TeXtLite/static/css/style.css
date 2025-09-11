@@ -608,7 +608,7 @@ footer .copyright {
 }
 
 /* Visitors Map */
-.visually-hidden {
+.visitors-map {
   position: absolute;
   width: 1px;
   height: 1px;
