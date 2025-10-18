@@ -2,7 +2,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="{{ $.Site.Params.description }}">
+    {{- $site := .Site -}}
+    {{- $page := . -}}
+    {{- $metaTitle := $site.Title -}}
+    {{- if or $page.IsPage $page.IsSection -}}
+        {{- $metaTitle = printf "%s | %s" ($page.Title | plainify) $site.Title -}}
+    {{- end -}}
+    {{- $ogTitle := $site.Title -}}
+    {{- with $page.Title }}{{- $ogTitle = (plainify .) -}}{{- end -}}
+    {{- $description := "" -}}
+    {{- if $page.IsPage -}}
+        {{- with $page.Params.seo_description }}{{- $description = . -}}{{- end -}}
+        {{- if not $description -}}
+            {{- with $page.Params.description }}{{- $description = . -}}{{- end -}}
+        {{- end -}}
+        {{- if and (not $description) $page.Summary -}}
+            {{- $description = $page.Summary -}}
+        {{- end -}}
+        {{- if and (not $description) $page.Plain -}}
+            {{- $description = $page.Plain -}}
+        {{- end -}}
+    {{- end -}}
+    {{- if not $description -}}
+        {{- with $site.Params.description }}{{- $description = . -}}{{- end -}}
+    {{- end -}}
+    {{- $description = $description | plainify | htmlUnescape | replaceRE "\\s+" " " | trim " " -}}
+    {{- if gt (len $description) 0 -}}
+        {{- $description = $description | truncate 160 -}}
+        <meta name="description" content="{{ $description }}">
+    {{- end -}}
+    {{- $author := "" -}}
+    {{- with $page.Params.author }}{{- $author = . -}}{{- end -}}
+    {{- if not $author -}}
+        {{- with $site.Params.author }}{{- $author = . -}}{{- end -}}
+    {{- end -}}
+    {{- if $author -}}
+        <meta name="author" content="{{ $author }}">
+    {{- end -}}
+    {{- $robots := "index,follow" -}}
+    {{- with $page.Params.robots }}{{- $robots = . -}}{{- end -}}
+    <meta name="robots" content="{{ $robots }}">
+    {{- $keywords := slice -}}
+    {{- with $page.Params.tags }}{{- $keywords = . -}}{{- end -}}
+    {{- if not (gt (len $keywords) 0) -}}
+        {{- with $site.Params.keywords }}{{- $keywords = . -}}{{- end -}}
+    {{- end -}}
+    {{- if gt (len $keywords) 0 -}}
+        <meta name="keywords" content="{{ delimit $keywords ", " }}">
+    {{- end -}}
+    {{- $canonical := $page.Permalink -}}
+    {{- if not $canonical -}}
+        {{- $canonical = $site.BaseURL -}}
+    {{- end -}}
+    <link rel="canonical" href="{{ $canonical }}">
+    {{- with $page.OutputFormats.Get "RSS" -}}
+        <link rel="alternate" type="{{ .MediaType.Type }}" title="{{ $site.Title }}" href="{{ .Permalink }}">
+    {{- else -}}
+        {{- with (site.Home.OutputFormats.Get "RSS") -}}
+            <link rel="alternate" type="{{ .MediaType.Type }}" title="{{ $site.Title }}" href="{{ .Permalink }}">
+        {{- end -}}
+    {{- end -}}
     <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}" />
     <link rel="stylesheet" href="{{ "/css/fonts.css" | relURL }}" />
     <link rel="stylesheet" href="{{ "/css/custom.css" | relURL }}" />
@@ -10,12 +69,96 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <title>
-        {{ if or .IsPage .IsSection }}
-            {{ .Title }} | 
-        {{ end }}
-        {{ .Site.Title }}
-    </title>
+    <title>{{ $metaTitle }}</title>
+    {{- $ogType := "website" -}}
+    {{- if $page.IsPage -}}
+        {{- $ogType = "article" -}}
+    {{- end -}}
+    {{- $ogLocale := "en_US" -}}
+    {{- with $site.LanguageCode -}}
+        {{- $ogLocale = replace . "-" "_" -}}
+    {{- end -}}
+    {{- $image := "" -}}
+    {{- with $page.Params.images -}}
+        {{- if gt (len .) 0 -}}
+            {{- $image = index . 0 -}}
+        {{- end -}}
+    {{- end -}}
+    {{- if not $image -}}
+        {{- with $page.Params.featuredImage }}{{- $image = . -}}{{- end -}}
+    {{- end -}}
+    {{- if not $image -}}
+        {{- with $page.Params.cover }}{{- $image = . -}}{{- end -}}
+    {{- end -}}
+    {{- if not $image -}}
+        {{- with $page.Params.image }}{{- $image = . -}}{{- end -}}
+    {{- end -}}
+    {{- if not $image -}}
+        {{- with $site.Params.opengraph.defaultImage }}{{- $image = . -}}{{- end -}}
+    {{- end -}}
+    {{- if not $image -}}
+        {{- $image = "/apple-touch-icon.png" -}}
+    {{- end -}}
+    {{- if not (hasPrefix $image "http://") -}}
+        {{- if not (hasPrefix $image "https://") -}}
+            {{- $image = $image | absURL -}}
+        {{- end -}}
+    {{- end -}}
+    <meta property="og:title" content="{{ $ogTitle }}">
+    {{- if gt (len $description) 0 -}}
+        <meta property="og:description" content="{{ $description }}">
+    {{- end -}}
+    <meta property="og:type" content="{{ $ogType }}">
+    <meta property="og:url" content="{{ $canonical }}">
+    <meta property="og:site_name" content="{{ $site.Title }}">
+    <meta property="og:locale" content="{{ $ogLocale }}">
+    <meta property="og:image" content="{{ $image }}">
+    {{- if $page.IsPage -}}
+        {{- with $page.PublishDate -}}
+            <meta property="article:published_time" content="{{ .Format "2006-01-02T15:04:05Z07:00" }}">
+        {{- end -}}
+        {{- with $page.Lastmod -}}
+            <meta property="article:modified_time" content="{{ .Format "2006-01-02T15:04:05Z07:00" }}">
+        {{- end -}}
+        {{- if $author -}}
+            <meta property="article:author" content="{{ $author }}">
+        {{- end -}}
+        {{- with $page.Params.tags -}}
+            {{- range . }}
+                <meta property="article:tag" content="{{ . }}">
+            {{- end -}}
+        {{- end -}}
+    {{- end -}}
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ $ogTitle }}">
+    {{- if gt (len $description) 0 -}}
+        <meta name="twitter:description" content="{{ $description }}">
+    {{- end -}}
+    <meta name="twitter:image" content="{{ $image }}">
+    {{- with $site.Params.social.twitter -}}
+        {{- $handle := trim . " " -}}
+        {{- if $handle -}}
+            <meta name="twitter:site" content="{{ $handle }}">
+        {{- end -}}
+    {{- end -}}
+    {{- if and $page.IsPage (eq $page.Section "post") -}}
+        {{- $schema := dict
+            "@context" "https://schema.org"
+            "@type" "BlogPosting"
+            "mainEntityOfPage" (dict "@type" "WebPage" "@id" $canonical)
+            "headline" $ogTitle
+            "description" $description
+            "image" (slice $image)
+            "author" (dict "@type" "Person" "name" (cond (eq (len $author) 0) $site.Title $author))
+            "publisher" (dict "@type" "Organization" "name" $site.Title "logo" (dict "@type" "ImageObject" "url" $image))
+            "datePublished" (cond (not $page.PublishDate.IsZero) ($page.PublishDate.Format "2006-01-02T15:04:05Z07:00") nil)
+            "dateModified" (cond (not $page.Lastmod.IsZero) ($page.Lastmod.Format "2006-01-02T15:04:05Z07:00") nil)
+            "url" $canonical
+        -}}
+        <script type="application/ld+json">
+            {{- $schema | jsonify | safeHTML -}}
+        </script>
+    {{- end -}}
 
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7052275005566990"
      crossorigin="anonymous"></script>
