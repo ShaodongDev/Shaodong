@@ -4,6 +4,8 @@ title: "Shaodong's Blog"
 theme: "TeXtLite"
 disqusShortname: "Shaodong-disqus"
 footnoteReturnLinkContents: "↩"
+enableRobotsTXT: true
+enableGitInfo: true
 
 permalinks:
   post: /:year/:month/:day/:filename/
@@ -14,6 +16,11 @@ outputFormats:
     mediaType: application/rss
 
 summaryLength: 80
+
+sitemap:
+  changefreq: weekly
+  priority: 0.6
+  filename: sitemap.xml
 
 menu:
   main:
@@ -29,6 +36,13 @@ menu:
 
 params:
   description: "About Learning"
+  author: "Shaodong"
+  keywords:
+    - Shaodong
+    - Blog
+    - Learning
+    - Technology
+    - Programming
   social:
     email: "zhanshaoton@gmail.com"
     github: "https://github.com/ShaodongDev"
@@ -40,6 +54,8 @@ params:
     twitter: "/themes/TeXtLite/static/social/twitter.svg"
     github: "/themes/TeXtLite/static/social/github.svg"
     facebook: "/themes/TeXtLite/static/social/facebook.svg"
+  opengraph:
+    defaultImage: "/apple-touch-icon.png"
   comments:
     utterances: "ShaodongDev/comment-system"
     disqus: "Shaodong-disqus"

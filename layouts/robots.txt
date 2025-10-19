@@ -1,0 +1,12 @@
+{{- $baseURL := .Site.BaseURL | default "/" -}}
+{{- $cleanBase := strings.TrimRight "/" $baseURL -}}
+User-agent: *
+Allow: /
+
+{{- with .Site.Params.disallowList }}
+{{- range $path := . }}
+Disallow: {{ $path }}
+{{- end }}
+{{- end }}
+
+Sitemap: {{ $cleanBase }}/sitemap.xml
