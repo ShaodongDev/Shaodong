@@ -27,20 +27,31 @@
       {{- end -}}
     {{- end -}}
     <lastmod>{{ $lastMod.Format "2006-01-02T15:04:05Z07:00" }}</lastmod>
-    {{- $freq := .Site.Sitemap.ChangeFreq | default "monthly" -}}
+    {{- $scratch := newScratch -}}
+    {{- $scratch.Set "freq" "monthly" -}}
+    {{- with .Site.Sitemap }}
+      {{- with .ChangeFreq }}
+        {{- $scratch.Set "freq" . -}}
+      {{- end -}}
+    {{- end -}}
     {{- with .Sitemap }}
       {{- with .ChangeFreq }}
-        {{- $freq = . -}}
+        {{- $scratch.Set "freq" . -}}
       {{- end -}}
     {{- end -}}
-    <changefreq>{{ $freq }}</changefreq>
-    {{- $priority := .Site.Sitemap.Priority | default 0.5 -}}
+    <changefreq>{{ $scratch.Get "freq" }}</changefreq>
+    {{- $scratch.Set "priority" 0.5 -}}
+    {{- with .Site.Sitemap }}
+      {{- with .Priority }}
+        {{- $scratch.Set "priority" . -}}
+      {{- end -}}
+    {{- end -}}
     {{- with .Sitemap }}
       {{- with .Priority }}
-        {{- $priority = . -}}
+        {{- $scratch.Set "priority" . -}}
       {{- end -}}
     {{- end -}}
-    <priority>{{ printf "%.1f" $priority }}</priority>
+    <priority>{{ printf "%.1f" ($scratch.Get "priority") }}</priority>
   </url>
   {{- end }}
 </urlset>
