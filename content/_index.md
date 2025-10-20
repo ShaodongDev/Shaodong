@@ -14,7 +14,7 @@ projects:
           tags: ['JavaScript', 'HTML', 'Web Development', 'UI Enhancement']
           about: "A Chrome extension that beautifies WeChat public account (微信公众号) articles for better readability."
           url: https://github.com/ShaodongDev/CleanWeView
-          img: https://github.com/ShaodongDev/CleanWeView/blob/main/promo/BgDemo.png?raw=true
+          img: https://raw.githubusercontent.com/ShaodongDev/CleanWeView/9327d42d9d9271accb049e0ec3f5b299d3ecec48/promo/BgDemo.webp
 
         - name: "Email Classifier"
           tags: ['Python','Machine Learning','ETL Pipeline', 'Email Automation']
