@@ -27,9 +27,19 @@
       {{- end -}}
     {{- end -}}
     <lastmod>{{ $lastMod.Format "2006-01-02T15:04:05Z07:00" }}</lastmod>
-    {{- $freq := .Sitemap.ChangeFreq | default .Site.Sitemap.ChangeFreq | default "monthly" -}}
+    {{- $freq := .Site.Sitemap.ChangeFreq | default "monthly" -}}
+    {{- with .Sitemap }}
+      {{- with .ChangeFreq }}
+        {{- $freq = . -}}
+      {{- end -}}
+    {{- end -}}
     <changefreq>{{ $freq }}</changefreq>
-    {{- $priority := .Sitemap.Priority | default .Site.Sitemap.Priority | default 0.5 -}}
+    {{- $priority := .Site.Sitemap.Priority | default 0.5 -}}
+    {{- with .Sitemap }}
+      {{- with .Priority }}
+        {{- $priority = . -}}
+      {{- end -}}
+    {{- end -}}
     <priority>{{ printf "%.1f" $priority }}</priority>
   </url>
   {{- end }}
