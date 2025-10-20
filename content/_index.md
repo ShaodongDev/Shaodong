@@ -14,13 +14,15 @@ projects:
           tags: ['JavaScript', 'HTML', 'Web Development', 'UI Enhancement']
           about: "A Chrome extension that beautifies WeChat public account (微信公众号) articles for better readability."
           url: https://github.com/ShaodongDev/CleanWeView
-          img: https://raw.githubusercontent.com/ShaodongDev/CleanWeView/9327d42d9d9271accb049e0ec3f5b299d3ecec48/promo/BgDemo.webp
+          img: https://github.com/ShaodongDev/CleanWeView/blob/main/promo/BgDemo.webp?raw=true
 
         - name: "Email Classifier"
           tags: ['Python','Machine Learning','ETL Pipeline', 'Email Automation']
           about: "A lightweight end-to-end ML pipeline for classifying emails using TF-IDF with Random Forest or Logistic Regression, featuring a semi-supervised loop."
           url: https://github.com/ShaodongDev/email-classifier
-          img: https://github.com/ShaodongDev/email-classifier/blob/main/images/image.png?raw=true
+          img: https://github.com/ShaodongDev/email-classifier/blob/main/images/image.webp?raw=true
+
+
         
 ---
 
