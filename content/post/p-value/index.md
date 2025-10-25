@@ -1,7 +1,8 @@
 ---
 title: '到底什么是 p-value？'
 author: Shaodong ZHANG
-date: '2025-05-19'
+date: '2025-07-06'
+publishDate: '2025-07-06'
 slug: 'p-value'
 categories: []
 tags:
