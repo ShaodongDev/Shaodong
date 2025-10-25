@@ -156,7 +156,7 @@
             "url" $canonical
         -}}
         <script type="application/ld+json">
-            {{- $schema | jsonify | safeHTML -}}
+            {{- $schema | jsonify | safeJS -}}
         </script>
     {{- end -}}
 
