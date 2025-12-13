@@ -1,5 +1,5 @@
 ---
-avatar: https://avatars.githubusercontent.com/u/99372537?s=400&u=775a2af7ebe488e209c0d38d3cfcdb6580c90e9d&v=4
+avatar: https://avatars.githubusercontent.com/u/99372537?v=4
 name: "Shaodong ZHANG"
 position: " "
 institute: ""
