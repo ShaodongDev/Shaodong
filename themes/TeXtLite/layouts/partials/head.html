@@ -1,5 +1,8 @@
 <head>
     <meta charset="UTF-8">
+    {{- if hugo.IsProduction -}}
+        {{- template "_internal/google_analytics.html" . -}}
+    {{- end -}}
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {{- $site := .Site -}}

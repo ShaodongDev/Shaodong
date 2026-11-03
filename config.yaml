@@ -7,6 +7,11 @@ footnoteReturnLinkContents: "↩"
 enableRobotsTXT: true
 enableGitInfo: true
 
+services:
+  googleAnalytics:
+    # GA4 measurement ID from the site's web data stream (G-XXXXXXXXXX).
+    ID: "G-XK68E44756"
+
 permalinks:
   post: /:year/:month/:day/:filename/
 
