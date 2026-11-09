@@ -11,6 +11,9 @@
     {{- if or $page.IsPage $page.IsSection -}}
         {{- $metaTitle = printf "%s | %s" ($page.Title | plainify) $site.Title -}}
     {{- end -}}
+    {{- if eq $page.Kind "404" -}}
+        {{- $metaTitle = printf "Page not found | %s" $site.Title -}}
+    {{- end -}}
     {{- $ogTitle := $site.Title -}}
     {{- with $page.Title }}{{- $ogTitle = (plainify .) -}}{{- end -}}
     {{- $description := "" -}}
@@ -44,6 +47,7 @@
     {{- end -}}
     {{- $robots := "index,follow" -}}
     {{- with $page.Params.robots }}{{- $robots = . -}}{{- end -}}
+    {{- if eq $page.Kind "404" }}{{- $robots = "noindex,follow" -}}{{- end -}}
     <meta name="robots" content="{{ $robots }}">
     {{- $keywords := slice -}}
     {{- with $page.Params.tags }}{{- $keywords = . -}}{{- end -}}
@@ -57,7 +61,9 @@
     {{- if not $canonical -}}
         {{- $canonical = $site.BaseURL -}}
     {{- end -}}
-    <link rel="canonical" href="{{ $canonical }}">
+    {{- if ne $page.Kind "404" -}}
+        <link rel="canonical" href="{{ $canonical }}">
+    {{- end -}}
     {{- with $page.OutputFormats.Get "RSS" -}}
         <link rel="alternate" type="{{ .MediaType.Type }}" title="{{ $site.Title }}" href="{{ .Permalink }}">
     {{- else -}}

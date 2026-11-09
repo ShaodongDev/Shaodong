@@ -1,0 +1,13 @@
+{{ define "main" }}
+<div class="main">
+    <article>
+        <div class="article_header">
+            <h1>Page not found</h1>
+        </div>
+        <div class="article_content">
+            <p>The page you requested could not be found.</p>
+            <p><a href="{{ "/" | relURL }}">Return home</a> or <a href="{{ "/post/" | relURL }}">browse all posts</a>.</p>
+        </div>
+    </article>
+</div>
+{{ end }}

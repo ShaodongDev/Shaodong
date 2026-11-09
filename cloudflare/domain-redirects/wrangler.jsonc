@@ -1,0 +1,22 @@
+{
+  "name": "shaodong-domain-redirects",
+  "account_id": "fce3b331cf15138b324be32c1e480399",
+  "main": "index.mjs",
+  "compatibility_date": "2026-11-09",
+  "workers_dev": false,
+  "preview_urls": false,
+  "routes": [
+    {
+      "pattern": "www.zhangshaodong.com/*",
+      "zone_name": "zhangshaodong.com"
+    },
+    {
+      "pattern": "shaodong.name/*",
+      "zone_name": "shaodong.name"
+    },
+    {
+      "pattern": "www.shaodong.name/*",
+      "zone_name": "shaodong.name"
+    }
+  ]
+}
