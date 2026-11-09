@@ -1,0 +1,39 @@
+{{- $content := .Content -}}
+{{- $base := urls.Parse .Permalink -}}
+
+{{- /* These two simple equations need no JavaScript in an RSS reader.
+      Match complete expressions only; leave any other mathematics intact. */ -}}
+{{- if or .Params.mathjax .Params.katex -}}
+  {{- $mathText := dict
+    `\begin{align} \text{工作产出} \ (Output) = \text{时间投入} \ (Time) \times \text{效率} \ (Efficiency) \end{align}`
+    "工作产出（Output） = 时间投入（Time） × 效率（Efficiency）"
+    `\begin{align} O_\downarrow = T \times E_\downarrow \end{align}`
+    "O↓ = T × E↓"
+  -}}
+  {{- range findRE `(?s)\$\$.*?\$\$` $content -}}
+    {{- $block := . -}}
+    {{- $expression := trim (replaceRE `\s+` " " .) "$ " -}}
+    {{- with index $mathText $expression -}}
+      {{- $content = replace $content $block (. | htmlEscape) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* Resolve URLs in rendered tags, including raw HTML images and PDF embeds.
+      ResolveReference keeps the article directory, query, fragment, and scheme. */ -}}
+{{- range findRE `(?s)<[A-Za-z][^>]*>` $content -}}
+  {{- $original := . -}}
+  {{- $tag := . -}}
+  {{- range findRESubmatch `([^\s=<>/]+)\s*=\s*(?:"([^"]*)"|'([^']*)'|([^\s"'=<>]+))` $tag -}}
+    {{- $attribute := index . 0 -}}
+    {{- $name := index . 1 -}}
+    {{- $url := or (index . 2) (index . 3) (index . 4) -}}
+    {{- if and $url (in (slice "href" "src" "poster") (lower $name)) -}}
+      {{- $resolved := $base.ResolveReference (urls.Parse (htmlUnescape $url)) -}}
+      {{- $replacement := printf `%s="%s"` $name ($resolved.String | htmlEscape) -}}
+      {{- $tag = replace $tag $attribute $replacement -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $content = replace $content $original $tag -}}
+{{- end -}}
+{{- return $content -}}
