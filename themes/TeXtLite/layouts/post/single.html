@@ -54,13 +54,13 @@
             {{ with .PrevInSection }}
                 <div>
                     <span>PREV</span>
-                    <a href="{{ .Permalink }}">{{ .Title }}</a>
+                    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
                 </div>
             {{ end }}
             {{ with .NextInSection }}
             <div>
                 <span>NEXT</span>
-                <a href="{{ .Permalink }}">{{ .Title }}</a>
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
             </div>
             {{ end }}
         </div>
