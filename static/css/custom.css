@@ -16,3 +16,50 @@ p.caption {
 .footnotes p, .footnotes li {
     text-align: left;
 }
+
+.article_content img {
+    max-width: 100%;
+    height: auto;
+}
+
+.article_content picture {
+    display: block;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+.archive-intro {
+    margin-bottom: 1.2em;
+}
+
+/* Preserve archive hover previews without replacing each link's accessible name. */
+@media only screen and (min-width: 700px) {
+    .post-link[data-preview]::after {
+        content: attr(data-preview);
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        display: block;
+        width: 55%;
+        margin: 0;
+        z-index: 20;
+        background: var(--header-background-darker);
+        color: white;
+        font-weight: normal;
+        font-size: .9em;
+        line-height: 1.4;
+        opacity: 0;
+        max-height: 0;
+        padding: 0;
+        transition: opacity .85s;
+        pointer-events: none;
+    }
+
+    .post-link[data-preview]:hover::after {
+        opacity: 1;
+        max-height: 40vh;
+        padding: .5rem 2% .5rem 43%;
+    }
+}

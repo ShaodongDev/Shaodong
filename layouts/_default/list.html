@@ -1,0 +1,59 @@
+{{ define "main" }}
+{{- $isArchive := and (eq .Kind "section") (eq .Section "post") -}}
+{{- $posts := where .Site.RegularPages "Section" "post" -}}
+{{- $pages := .RegularPages.ByDate.Reverse -}}
+<div class="main">
+    <article>
+        <div class="article_header">
+            <h1>{{ .Title }}</h1>
+            {{ with .Content }}<div class="archive-intro">{{ . }}</div>{{ end }}
+            {{ if and (eq .Kind "term") (not .Content) }}
+            <p class="archive-intro">{{ len $pages }} {{ if eq (len $pages) 1 }}article{{ else }}articles{{ end }} tagged {{ .Title }}.</p>
+            {{ end }}
+            <nav class="tags" aria-label="Browse posts by tag"{{ if $isArchive }} data-post-filters{{ end }}>
+                <a href="{{ "/post/" | relURL }}" data-tag="all"{{ if $isArchive }} class="highlight" aria-current="true"{{ end }}>All<sup> {{ len $posts }}</sup></a>
+                {{ range .Site.Taxonomies.tags.ByCount }}
+                <a href="{{ .Page.RelPermalink }}" data-tag="{{ .Name }}"{{ if eq $.RelPermalink .Page.RelPermalink }} class="highlight" aria-current="true"{{ end }}>{{ .Page.Title }}<sup> {{ .Count }}</sup></a>
+                {{ end }}
+            </nav>
+        </div>
+
+        {{ if eq .Kind "taxonomy" }}
+            {{ if .Data.Terms }}
+            <ul class="taxonomy-list">
+                {{ range .Data.Terms.Alphabetical }}
+                <li><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a> <span>({{ .Count }})</span></li>
+                {{ end }}
+            </ul>
+            {{ else }}
+            <p>No {{ lower .Title }} have been added. <a href="{{ "/post/" | relURL }}">Browse all posts</a> instead.</p>
+            {{ end }}
+        {{ else }}
+        <div class="article_list" data-tag="all"{{ if $isArchive }} data-post-list{{ end }}>
+            {{ range $pages.GroupByDate "2006" }}
+            <section data-post-year>
+                <h2>{{ .Key }}</h2>
+                <ul>
+                    {{ range .Pages }}
+                    {{- $tags := slice -}}
+                    {{- range .GetTerms "tags" }}{{- $tags = $tags | append (.Data.Term | lower) -}}{{- end -}}
+                    <li data-post-tags="{{ $tags | jsonify }}">
+                        <span class="published">{{ .Date.Format "Jan 02" }}</span>
+                        <a class="post-link" href="{{ .RelPermalink }}" data-preview="{{ .Summary | plainify | htmlUnescape | truncate 250 }}">
+                            <span>{{ .Title }}</span>
+                            {{ with .Params.subtitle }}<span class="subtitle">{{ . }}</span>{{ end }}
+                        </a>
+                    </li>
+                    {{ end }}
+                </ul>
+            </section>
+            {{ end }}
+        </div>
+        {{ if $isArchive }}
+        <p data-filter-empty hidden>No posts match this tag. <a href="{{ "/post/" | relURL }}">Show all posts</a>.</p>
+        {{ end }}
+        {{ end }}
+    </article>
+</div>
+{{ if $isArchive }}<script src="{{ "/js/post-filter.js" | relURL }}" defer></script>{{ end }}
+{{ end }}

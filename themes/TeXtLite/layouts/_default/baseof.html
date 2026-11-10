@@ -2,6 +2,8 @@
 {{- $lang := "en" -}}
 {{- with .Site.LanguageCode }}{{- $lang = . -}}{{- end -}}
 {{- with .Site.Language }}{{- with .Lang }}{{- $lang = . -}}{{- end }}{{- end -}}
+{{- $seo := index site.Data.seo .RelPermalink | default dict -}}
+{{- with (.Params.lang | default $seo.lang) }}{{- $lang = . -}}{{- end -}}
 <html lang="{{ $lang }}">
     {{- partial "head.html" . -}}
     <body>

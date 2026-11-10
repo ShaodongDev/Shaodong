@@ -1,0 +1,88 @@
+{
+  "/2024/04/25/ir-in-social-science/": {
+    "lang": "zh-CN",
+    "description": "国际关系为何通常被归入社会科学？从自然科学、社会科学与人文学科的区别，讨论国际关系的理论框架、研究方法及这种划分的局限。",
+    "images": [
+      "Venn1.png"
+    ],
+    "image_alt": {
+      "Venn1.png": "科学、社会科学与国际关系之间的集合关系示意图",
+      "Venn2.png": "自然科学与社会科学的学科关系示意图",
+      "TIP.png": "肯尼斯·沃尔兹的国际政治理论一书"
+    }
+  },
+  "/2025/03/06/academia-within-me/": {
+    "lang": "en",
+    "description": "A personal account of how graduate research training shaped truth-seeking, patience and curiosity, and why scholarly inquiry still matters outside an academic career.",
+    "image_alt": {
+      "SM_ongoing_process.png": "Scientific inquiry as an ongoing process",
+      "growth_data.png": "Growth in scientific publications over time"
+    }
+  },
+  "/2026/09/26/how-to-write-a-resume/": {
+    "lang": "zh-CN",
+    "description": "从岗位匹配、经历表述与扫读排版三个视角检查简历，用具体例子说明如何回应职位描述、展示真实成果并降低招聘者的理解成本。",
+    "images": [
+      "assets/images/image-gen-1_7_-1790406860654-zsic-1790406861014-sxokpdqj.png"
+    ],
+    "image_alt": {
+      "assets/images/clipboard-1790405479762-u56z-1790405479766-5xww6nhc.png": "简历信息布局与扫读方式示意图",
+      "assets/images/image-gen-1_7_-1790406860654-zsic-1790406861014-sxokpdqj.png": "使用一致对齐、分组和重复样式的简历排版示意图"
+    }
+  },
+  "/2024/01/07/importance-of-concepts/": {
+    "lang": "zh-CN",
+    "description": "为什么仅靠经验和零散知识不够？结合个人经历，讨论科学准确的概念、记忆与系统性学习如何帮助理解问题并指导行动。"
+  },
+  "/2025/07/06/p-value/": {
+    "description": "以样本、总体、概率分布与假设检验为线索讨论 p-value，并记录从一个统计概念出发构建知识网络的系统性学习过程。",
+    "lang": "zh-CN",
+    "images": [
+      "standard_normal_distribution.png"
+    ],
+    "image_alt": {
+      "network.jpg": "相互连接的知识网络示意图",
+      "Sample-Target-Population.jpeg": "样本与目标总体的关系示意图",
+      "figure_1.png": "图一：样本均值的频数分布",
+      "figure_2.png": "图二：正态分布曲线",
+      "figure_3.png": "图三：样本均值与正态分布示意图",
+      "figure_2_red_line.png": "在分布曲线上标记样本均值的位置",
+      "standard_normal_distribution.png": "标准正态分布及不同标准误差区间",
+      "iceberg.png": "冰山露出水面与隐藏在水下的部分",
+      "iceberg_model.jpeg": "从表面事件到系统结构的冰山模型",
+      "network_connection.png": "概念之间逐步建立联系的知识网络"
+    }
+  },
+  "/2024/03/15/python-in-use/": {
+    "lang": "en",
+    "description": "A Python regular-expression approach to extracting vocabulary from WeChat Read notes, with sample input, duplicate removal and discussion of its limitations.",
+    "images": [
+      "cn_and_eng.png"
+    ],
+    "image_alt": {
+      "cn_and_eng.png": "A WeChat Read export containing English highlights and Chinese notes"
+    }
+  },
+  "/2025/01/18/rethink-commute/": {
+    "lang": "zh-CN",
+    "description": "从个人通勤与工作观察出发，讨论时间投入、注意力和效率之间的关系，以及选择住所与交通方式时容易忽略的成本。",
+    "image_alt": {
+      "signal.png": "通勤与注意力分配的示意图"
+    }
+  },
+  "/2023/11/29/sharing_session/": {
+    "lang": "zh-CN",
+    "description": "一场 2023 年研究生经验分享的文字记录，讨论国际关系课程、数据分析技能、国际组织实习准备，以及在马德里学习生活的体会。"
+  },
+  "/": {
+    "lang": "en",
+    "description": "Essays and practical notes on learning, social science, programming and graduate skills, alongside open-source projects."
+  },
+  "/post/": {
+    "description": "Browse all articles on learning, social science, graduate study, programming and practical skills."
+  },
+  "/about/": {
+    "lang": "en",
+    "description": "Licensing information for the articles and code on Shaodong’s Blog."
+  }
+}

@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {{- $site := .Site -}}
     {{- $page := . -}}
+    {{- $seo := index site.Data.seo $page.RelPermalink | default dict -}}
     {{- $metaTitle := $site.Title -}}
-    {{- if or $page.IsPage $page.IsSection -}}
+    {{- if not $page.IsHome -}}
         {{- $metaTitle = printf "%s | %s" ($page.Title | plainify) $site.Title -}}
     {{- end -}}
     {{- if eq $page.Kind "404" -}}
@@ -16,9 +17,8 @@
     {{- end -}}
     {{- $ogTitle := $site.Title -}}
     {{- with $page.Title }}{{- $ogTitle = (plainify .) -}}{{- end -}}
-    {{- $description := "" -}}
+    {{- $description := $page.Params.seo_description | default $page.Params.description | default $seo.description | default "" -}}
     {{- if $page.IsPage -}}
-        {{- with $page.Params.seo_description }}{{- $description = . -}}{{- end -}}
         {{- if not $description -}}
             {{- with $page.Params.description }}{{- $description = . -}}{{- end -}}
         {{- end -}}
@@ -29,10 +29,17 @@
             {{- $description = $page.Plain -}}
         {{- end -}}
     {{- end -}}
+    {{- if and (not $description) (eq $page.Kind "term") -}}
+        {{- $description = printf "%s articles by %s: %d posts on %s." $page.Title $site.Params.author (len $page.RegularPages) $page.Title -}}
+    {{- end -}}
+    {{- if and (not $description) (eq $page.Kind "taxonomy") -}}
+        {{- $description = printf "Browse %s on %s and find related articles about learning, social science and practical tools." $page.Title $site.Title -}}
+    {{- end -}}
     {{- if not $description -}}
         {{- with $site.Params.description }}{{- $description = . -}}{{- end -}}
     {{- end -}}
-    {{- $description = $description | plainify | htmlUnescape | replaceRE "\\s+" " " | trim " " -}}
+    {{- $description = $description | plainify | htmlUnescape | replaceRE "\\s+" " " -}}
+    {{- $description = trim $description " " -}}
     {{- if gt (len $description) 0 -}}
         {{- $description = $description | truncate 160 -}}
         <meta name="description" content="{{ $description }}">
@@ -84,11 +91,11 @@
         {{- $ogType = "article" -}}
     {{- end -}}
     {{- $ogLocale := "en_US" -}}
-    {{- with $site.LanguageCode -}}
+    {{- with ($page.Params.lang | default $seo.lang | default $site.LanguageCode) -}}
         {{- $ogLocale = replace . "-" "_" -}}
     {{- end -}}
     {{- $image := "" -}}
-    {{- with $page.Params.images -}}
+    {{- with ($page.Params.images | default $seo.images) -}}
         {{- if gt (len .) 0 -}}
             {{- $image = index . 0 -}}
         {{- end -}}
@@ -107,6 +114,17 @@
     {{- end -}}
     {{- if not $image -}}
         {{- $image = "/apple-touch-icon.png" -}}
+    {{- end -}}
+    {{- /* Article images are page-bundle resources, not paths at the site root. */ -}}
+    {{- with $page.Resources.GetMatch (strings.TrimPrefix "./" $image) -}}
+        {{- $cover := . -}}
+        {{- if and (in (slice "png" "jpeg" "webp") .MediaType.SubType) (gt .Width 1200) -}}
+            {{- $format := "png" -}}
+            {{- if eq .MediaType.SubType "jpeg" }}{{- $format = "jpg q85" -}}{{- end -}}
+            {{- if eq .MediaType.SubType "webp" }}{{- $format = "webp q85" -}}{{- end -}}
+            {{- $cover = .Resize (printf "1200x %s" $format) -}}
+        {{- end -}}
+        {{- $image = $cover.Permalink -}}
     {{- end -}}
     {{- if not (hasPrefix $image "http://") -}}
         {{- if not (hasPrefix $image "https://") -}}
@@ -158,7 +176,8 @@
             "headline" $ogTitle
             "description" $description
             "image" (slice $image)
-            "author" (dict "@type" "Person" "name" (cond (eq (len $author) 0) $site.Title $author))
+            "author" (dict "@type" "Person" "name" (cond (eq (len $author) 0) $site.Title $author) "url" ("about/" | absURL))
+            "inLanguage" ($page.Params.lang | default $seo.lang | default $site.LanguageCode)
             "publisher" (dict "@type" "Organization" "name" $site.Title "logo" (dict "@type" "ImageObject" "url" $image))
             "datePublished" (cond (not $page.PublishDate.IsZero) ($page.PublishDate.Format "2006-01-02T15:04:05Z07:00") nil)
             "dateModified" (cond (not $page.Lastmod.IsZero) ($page.Lastmod.Format "2006-01-02T15:04:05Z07:00") nil)

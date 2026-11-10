@@ -1,4 +1,4 @@
-{{- $content := .Content -}}
+{{- $content := partialCached "content/images.html" (dict "Page" . "Content" .Content "RSS" true) .RelPermalink "rss" -}}
 {{- $base := urls.Parse .Permalink -}}
 
 {{- /* These two simple equations need no JavaScript in an RSS reader.

@@ -1,0 +1,64 @@
+{{- /* Normalize both Markdown and raw HTML images without changing source URLs.
+      Keep an optimized conventional-format fallback for RSS and older readers. */ -}}
+{{- $page := .Page -}}
+{{- $seo := index site.Data.seo $page.RelPermalink | default dict -}}
+{{- $content := .Content -}}
+{{- $rss := .RSS | default false -}}
+{{- range $index, $original := findRE `(?is)<img\b[^>]*>` $content -}}
+  {{- $attrs := dict -}}
+  {{- range findRESubmatch `([A-Za-z_:][-A-Za-z0-9_:.]*)\s*=\s*(?:"([^"]*)"|'([^']*)'|([^\s"'=<>]+))` $original -}}
+    {{- $attrs = merge $attrs (dict (lower (index . 1)) (htmlUnescape (or (index . 2) (index . 3) (index . 4)))) -}}
+  {{- end -}}
+  {{- with index $attrs "src" -}}
+    {{- $url := urls.Parse . -}}
+    {{- if and (not $url.IsAbs) (not (hasPrefix . "//")) -}}
+      {{- $path := strings.TrimPrefix "./" $url.Path -}}
+      {{- with $page.Resources.GetMatch $path -}}
+        {{- $image := . -}}
+        {{- if in (slice "png" "jpeg" "webp") $image.MediaType.SubType -}}
+          {{- $fallback := $image -}}
+          {{- $width := int (math.Min 1600 $image.Width) -}}
+          {{- $process := or (gt $image.Width 1600) (gt (len $image.Content) 100000) -}}
+          {{- if $process -}}
+            {{- $format := "png" -}}
+            {{- if eq $image.MediaType.SubType "jpeg" }}{{- $format = "jpg q85" -}}{{- end -}}
+            {{- if eq $image.MediaType.SubType "webp" }}{{- $format = "webp q85" -}}{{- end -}}
+            {{- $fallback = $image.Resize (printf "%dx %s" $width $format) -}}
+            {{- if ge (len $fallback.Content) (len $image.Content) }}{{- $fallback = $image -}}{{- end -}}
+          {{- end -}}
+          {{- $src := $fallback.RelPermalink -}}
+          {{- if $rss }}{{- $src = $fallback.Permalink -}}{{- end -}}
+          {{- $alt := index $attrs "alt" | default "" -}}
+          {{- if not $alt -}}
+            {{- with ($page.Params.image_alt | default $seo.image_alt) }}{{- $alt = index . $path | default "" -}}{{- end -}}
+          {{- end -}}
+          {{- $attrs = merge $attrs (dict "src" $src "width" (string $fallback.Width) "height" (string $fallback.Height) "alt" $alt "decoding" "async") -}}
+          {{- $webp := slice -}}
+          {{- if and $process (not $rss) -}}
+            {{- range uniq (slice (int (math.Min 384 $width)) (int (math.Min 768 $width)) (int (math.Min 1200 $width)) $width) -}}
+              {{- $variant := $image.Resize (printf "%dx webp q85" .) -}}
+              {{- $webp = $webp | append (printf "%s %dw" $variant.RelPermalink $variant.Width) -}}
+            {{- end -}}
+          {{- end -}}
+          {{- if not $rss -}}
+            {{- $loading := "lazy" -}}
+            {{- if eq $index 0 }}{{- $loading = "eager" -}}{{- end -}}
+            {{- $attrs = merge $attrs (dict "loading" $loading) -}}
+          {{- end -}}
+          {{- $tag := "<img" -}}
+          {{- range $name, $value := $attrs -}}
+            {{- if not (and $rss (in (slice "loading" "fetchpriority" "srcset" "sizes") $name)) -}}
+              {{- $tag = printf `%s %s="%s"` $tag $name ($value | htmlEscape) -}}
+            {{- end -}}
+          {{- end -}}
+          {{- $tag = printf "%s>" $tag -}}
+          {{- if $webp -}}
+            {{- $tag = printf `<picture><source type="image/webp" srcset="%s" sizes="(max-width: 700px) 90vw, (max-width: 1200px) 70vw, 800px">%s</picture>` (delimit $webp ", " | htmlEscape) $tag -}}
+          {{- end -}}
+          {{- $content = replace $content $original $tag -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- return ($content | safeHTML) -}}

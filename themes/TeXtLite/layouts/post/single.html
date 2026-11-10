@@ -18,7 +18,7 @@
                 {{ if .Params.tags }}
                 <div class="tags">
                     {{ range .Params.tags }}
-                        <a href="/post/?tag={{ . | urlize }}">{{ . | lower }}</a>
+                        <a href="{{ printf "/post/?%s" (querify "tag" (lower .)) | safeURL }}">{{ . | lower }}</a>
                     {{ end }}
                 </div>
                 {{ end }}
@@ -38,7 +38,7 @@
         </div>
 
         <div class="article_content">
-            {{ .Content }}
+            {{ partialCached "content/images.html" (dict "Page" . "Content" .Content) .RelPermalink "html" }}
         </div>
 
         <br><br><br>
