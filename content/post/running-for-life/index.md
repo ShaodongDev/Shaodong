@@ -73,23 +73,23 @@ disqus: true
 到现在，跑步的时候我是完全放松的。偶尔不带耳机，只为了享受跑步本身。听着自己的脚步声、从身旁掠过的风声，还有海浪拍岸的声音，这不也挺好？
 
 [^vo2max]: 最大摄氧量指身体在高强度运动时，每分钟最多能利用多少氧气，是衡量心肺耐力的指标之一。Apple Watch 显示的是根据运动数据推算的估计值。[参考：Apple 支持](https://support.apple.com/zh-cn/108790)。
-    
+
 [^vertical-oscillation]: 跑步时，身体躯干随每一步上下起伏的幅度，通常以厘米计。可以把它理解为跑步时身体“上下弹跳”了多少。[参考：Apple Watch 使用手册](https://support.apple.com/zh-cn/guide/watch/apd1f24d4d35/watchos)。
-    
+
 [^half-marathon]: 半程马拉松的标准距离为 21.0975 公里，约 21.1 公里，是全程马拉松距离的一半。[参考：世界田联](https://worldathletics.org/competitions/world-athletics-road-running-championships/copenhagen26/races/half-marathon)。
-    
+
 [^zone-2]: Zone 2 可以理解为一种较轻松、能持续较长时间的运动状态：呼吸有所加快，但仍能连贯交谈，具体跑多快因人而异。按常见的“最大心率百分比”五区划分，Zone 2 约为最大心率的 60%～70%。最大心率可用“220 − 年龄”粗略估算：例如，30 岁的人，估算最大心率为 190 次/分钟，对应的 Zone 2 约为 114～133 次/分钟。个人实际区间及手表采用的计算方法可能不同。[参考：克利夫兰诊所](https://health.clevelandclinic.org/zone-2-cardio)。
-    
+
 [^tempo-run]: 节奏跑是以比轻松慢跑更费力的强度，稳定持续跑一段时间，主要练习较高强度下的耐力；可以理解为“明显吃力，但还能稳住速度”。美国国家体能协会（NSCA）的教材节选给出的典型节奏段持续时间约为 20～30 分钟。假设某人的节奏跑速度是每公里 5 分 30 秒，那么持续跑 20 分钟，约为 3.6 公里。[参考：NSCA《有氧耐力训练策略》（教材节选）](https://www.nsca.com/education/articles/kinetic-select/aerobic-endurance-training-strategies2/)。
-    
+
 [^long-slow-distance]: 长距离慢跑常简称 LSD（Long Slow Distance），指以较轻松的强度持续较长时间，主要训练耐力。NSCA 的教材节选列出的参考强度约为最大心率的 60%～70%。假设某人的轻松跑速度是每公里 7 分 30 秒，那么连续跑 90 分钟，累计就是 12 公里。LDS 具体多久、多远取决于个人基础。[参考：NSCA《有氧耐力训练策略》（教材节选）](https://www.nsca.com/education/articles/kinetic-select/aerobic-endurance-training-strategies2/)。
-    
+
 [^patellar-tendinitis]: 髌腱是连接膝盖骨与小腿胫骨的一条强韧组织，参与伸直膝盖的动作；髌腱炎指这条组织出现炎症，常见于需要跑跳的运动中。[参考：美国骨科医师学会](https://www.orthoinfo.org/bodypart/kneelower-leg/patellar-tendon-tear/)。
-    
+
 [^mri]: MRI 即磁共振成像，是一种能提供身体内部详细图像的检查，帮助医生观察组织结构、判断损伤等问题。[参考：英国 NHS](https://www.nhs.uk/tests-and-treatments/mri-scan/)。
-    
+
 [^pcl]: 后交叉韧带位于膝关节内部，连接大腿骨与小腿胫骨。可以把它理解为帮助稳定膝盖的一条“固定带”，主要限制小腿相对于大腿过度向后移动。[参考：美国骨科医师学会](https://www.orthoinfo.org/bodypart/kneelower-leg/posterior-cruciate-ligament-injuries/)。
-    
+
 [^meniscus]: 半月板是膝关节里位于大腿骨与小腿骨之间的纤维软骨，内外侧各有一块，像两块“缓冲垫”，帮助分担重量、缓冲冲击并稳定关节。[参考：美国骨科医师学会](https://www.orthoinfo.org/bodypart/kneelower-leg/meniscus-tears/)。
-    
+
 [^foot-strike]: 后脚掌着地指脚跟先接触地面；前脚掌着地指脚趾根部附近的前脚掌先接触地面。这两个说法描述的是落地时哪个部位先着地。
