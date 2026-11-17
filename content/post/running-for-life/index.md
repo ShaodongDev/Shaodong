@@ -1,5 +1,5 @@
 ---
-title: '跑步是一辈子的事情'
+title: '跑步这两年'
 author: Shaodong
 date: '2026-11-17'
 slug: ''
@@ -34,7 +34,7 @@ disqus: true
 
 之后我做了一次 MRI 检查[^mri]，结果显示：左膝后交叉韧带[^pcl]部分撕裂。
 
-![左膝 MRI 影像诊断报告（个人信息已遮挡）](./assets/images/mri-report.png)
+![左膝 MRI 影像诊断报告](./assets/images/mri-report.png)
 
 拿着报告，盯了好一会，我才缓过神来 —— 本意是通过跑步追求更健康的生活方式，怎么到头来还受伤了呢？
 
