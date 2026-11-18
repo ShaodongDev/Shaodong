@@ -76,7 +76,13 @@
   },
   "/2026/11/17/running-for-life/": {
     "lang": "zh-CN",
-    "description": "记录从追逐跑步数据、备战半马到受伤休养、重新享受慢跑的经历，思考健康、运动目标与长期坚持之间的关系，并为非跑者解释常见术语。"
+    "description": "记录从追逐跑步数据、备战半马到受伤休养、重新享受慢跑的经历，思考健康、运动目标与长期坚持之间的关系，并为非跑者解释常见术语。",
+    "images": [
+      "assets/images/left-knee-mri-report.png"
+    ],
+    "image_alt": {
+      "assets/images/left-knee-mri-report.png": "左膝 MRI 影像诊断报告：考虑后交叉韧带部分撕裂，伴关节积液"
+    }
   },
   "/": {
     "lang": "en",

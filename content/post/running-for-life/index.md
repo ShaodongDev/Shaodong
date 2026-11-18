@@ -34,7 +34,10 @@ disqus: true
 
 之后我做了一次 MRI 检查[^mri]，结果显示：左膝后交叉韧带[^pcl]部分撕裂。
 
-![左膝 MRI 影像诊断报告](./assets/images/mri-report.png)
+<figure>
+  <img src="./assets/images/left-knee-mri-report.png" alt="左膝 MRI 影像诊断报告：考虑后交叉韧带部分撕裂，伴关节积液" style="width: 50%; height: auto;">
+  <figcaption>左膝 MRI 影像诊断报告</figcaption>
+</figure>
 
 拿着报告，盯了好一会，我才缓过神来 —— 本意是通过跑步追求更健康的生活方式，怎么到头来还受伤了呢？
 
@@ -56,7 +59,7 @@ disqus: true
 
 知道继续跟医生再追问下去也不会有什么结果，毕竟影像检查结果没有发现明显异常。我明白，得自己想想办法了。
 
-我开始复盘是什么导致现在的情况的。我想起之前纠结垂直振幅数据那次的跑姿调整，当时是换成了后脚掌着地[^foot-strike]的方式。会不会是因为那次调整呢？
+我开始复盘是什么导致了现在的情况。刚开始跑步两个月时，[小腿疼曾让我意识到跑姿可能有问题](https://zhangshaodong.com/2025/03/06/academia-within-me/#patience:~:text=This%20lesson%20extends,do%20the%20rest.)。这一次，我又把注意力放回到跑姿上，想起之前纠结垂直振幅数据那次的调整，当时是换成了后脚掌着地[^foot-strike]的方式。会不会是因为那次调整呢？
 
 接下来的一次试跑，我开始有意前脚掌着地，并且增加了屈膝幅度。调整下来，跑完还是有点疼，不过疼痛出现的时间推迟了，以前跑 20 分钟就疼，现在可以 50 分钟了。看来是有效果的。
 
