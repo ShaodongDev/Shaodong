@@ -84,6 +84,16 @@
       "assets/images/left-knee-mri-report.png": "左膝 MRI 影像诊断报告：考虑后交叉韧带部分撕裂，伴关节积液"
     }
   },
+  "/2026/11/23/underlying-logic/": {
+    "lang": "zh-CN",
+    "description": "从一次商业提案的分歧出发，讨论为什么应先理解销售与沟通的底层逻辑，再制定具体行动方案，以及如何把握普遍性、举一反三。",
+    "images": [
+      "assets/images/underlying-logic-tree.png"
+    ],
+    "image_alt": {
+      "assets/images/underlying-logic-tree.png": "同一树干延伸出形态各异的枝条，寓意底层逻辑与具体事物的关系"
+    }
+  },
   "/": {
     "lang": "en",
     "description": "Essays and practical notes on learning, social science, programming and graduate skills, alongside open-source projects."
