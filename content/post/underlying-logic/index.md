@@ -12,7 +12,7 @@ draft: false
 disqus: true
 ---
 
-![同一树干延伸出形态各异的枝条，寓意底层逻辑与具体事物的关系](./assets/images/underlying-logic-tree.png)
+![](./assets/images/underlying-logic-tree.png)
 
 前一阵子，我和同事合作准备了一场面向客户的方案汇报。从前期准备到演讲结束，我们几乎始终存在分歧。
 
